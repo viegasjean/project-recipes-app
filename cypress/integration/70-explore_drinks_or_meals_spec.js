@@ -63,7 +63,7 @@ describe('73 - Redirecione a pessoa usuária ao clicar em "By Nationality", a ro
   });
 });
 
-describe('74 - Redirecione a pessoa usuária ao clicar em "Surprise me!", a rota deve mudar para a tela de detalhes de uma receita, que deve ser escolhida de forma aleatória através da API', () => {
+describe.only('74 - Redirecione a pessoa usuária ao clicar em "Surprise me!", a rota deve mudar para a tela de detalhes de uma receita, que deve ser escolhida de forma aleatória através da API', () => {
   it('Ao clicar no botão "Surprise me!" da tela de explorar comidas a rota muda para a página de detalhes de uma comida aleatória', () => {
     cy.visit('http://localhost:3000/explore/foods', {
       onBeforeLoad(win) {
